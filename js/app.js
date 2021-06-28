@@ -127,92 +127,116 @@ for (let i = 0; i < hour.length; i++) {
     let listItem = document.createElement('li');
     unOrderedList.appendChild(listItem);
     listItem.textContent = `${hour[i]} ${Math.floor(Lima.hourCust[i] * Lima.avg)} cookies`;
-    sum = sum + Math.floor(Lima.hourCust[i] * Lima.avg);
-    if (i == (hour.length - 1)) {
-        Lima.total = sum;
-        listItem.textContent = `Total: ${sum}`;
-        unOrderedList.appendChild(listItem);
+    Lima.total = Lima.total + Math.floor(Lima.hourCust[i] * Lima.avg);
+    // if (i == (hour.length - 1)) {
+    //     Lima.total = sum;
+    //     listItem.textContent = `Total: ${sum}`;
+    //     unOrderedList.appendChild(listItem);
 
 
-    }
+    // }
 }
 
-unOrderedList = document.createElement('ul');
-sea.appendChild(unOrderedList);
+//////////
+let listItem1 = document.createElement('li');
+unOrderedList.appendChild(listItem1);
+listItem1.textContent = `Total: ${Lima.total}`;
+//////////
+
+let unOrderedList1 = document.createElement('ul');
+sea.appendChild(unOrderedList1);
 for (let i = 0; i < hour.length; i++) {
     let listItem = document.createElement('li');
-    unOrderedList.appendChild(listItem);
+    unOrderedList1.appendChild(listItem);
     listItem.textContent = `${hour[i]} ${Math.floor(Seattle.hourCust[i] * Seattle.avg)} cookies`;
-    sum = sum + Math.floor(Seattle.hourCust[i] * Seattle.avg);
-    if (i == (hour.length - 1)) {
-        Seattle.total = sum;
-        listItem.textContent = `Total: ${sum}`;
-        unOrderedList.appendChild(listItem);
+    Seattle.total = Seattle.total + Math.floor(Seattle.hourCust[i] * Seattle.avg);
+    // if (i == (hour.length - 1)) {
+    //     Seattle.total = sum;
+    //     listItem.textContent = `Total: ${sum}`;
+    //     unOrderedList1.appendChild(listItem);
 
 
-    }
+    // }
 
 }
-
-
-unOrderedList = document.createElement('ul');
-sea1.appendChild(unOrderedList);
+///////////
+let listItem = document.createElement('li');
+unOrderedList1.appendChild(listItem);
+listItem.textContent = `Total: ${Seattle.total}`;
+////////////
+let unOrderedList2 = document.createElement('ul');
+sea1.appendChild(unOrderedList2);
 
 for (let i = 0; i < hour.length; i++) {
     let listItem = document.createElement('li');
-    unOrderedList.appendChild(listItem);
+    unOrderedList2.appendChild(listItem);
     listItem.textContent = `${hour[i]} ${Math.floor(Tokyo.hourCust[i] * Tokyo.avg)} cookies`;
-    sum = sum + Math.floor(Tokyo.hourCust[i] * Tokyo.avg);
-    if (i == (hour.length - 1)) {
-        Tokyo.total = sum;
-        listItem.textContent = `Total: ${sum}`;
-        unOrderedList.appendChild(listItem);
+    Tokyo.total = Tokyo.total + Math.floor(Tokyo.hourCust[i] * Tokyo.avg);
+    // if (i == (hour.length - 1)) {
+    //     Tokyo.total = sum;
+    //     listItem.textContent = `Total: ${sum}`;
+    //     unOrderedList2.appendChild(listItem);
 
 
-    }
+    // }
 
 }
+//////////
+let listItem2 = document.createElement('li');
+unOrderedList2.appendChild(listItem2);
+listItem2.textContent = `Total: ${Tokyo.total}`;
+//////////
 
-
-unOrderedList = document.createElement('ul');
-sea2.appendChild(unOrderedList);
+let unOrderedList3 = document.createElement('ul');
+sea2.appendChild(unOrderedList3);
 
 for (let i = 0; i < hour.length; i++) {
     let listItem = document.createElement('li');
-    unOrderedList.appendChild(listItem);
+    unOrderedList3.appendChild(listItem);
     listItem.textContent = `${hour[i]} ${Math.floor(Dubai.hourCust[i] * Dubai.avg)} cookies`;
-    sum = sum + Math.floor(Dubai.hourCust[i] * Dubai.avg);
-    if (i == (hour.length - 1)) {
-        Dubai.total = sum;
-        listItem.textContent = `Total: ${sum}`;
-        unOrderedList.appendChild(listItem);
+    Dubai.total = Dubai.total + Math.floor(Dubai.hourCust[i] * Dubai.avg);
+    // if (i == (hour.length - 1)) {
+    //     Dubai.total = sum;
+    //     listItem.textContent = `Total: ${sum}`;
+    //     unOrderedList3.appendChild(listItem);
 
 
-    }
+    // }
 
 
 }
 
-
-unOrderedList = document.createElement('ul');
-sea3.appendChild(unOrderedList);
+//////////
+let listItem3 = document.createElement('li');
+unOrderedList3.appendChild(listItem3);
+listItem3.textContent = `Total: ${Dubai.total}`;
+//////////
+let unOrderedList4 = document.createElement('ul');
+sea3.appendChild(unOrderedList4);
 
 for (let i = 0; i < hour.length; i++) {
     let listItem = document.createElement('li');
-    unOrderedList.appendChild(listItem);
+    unOrderedList4.appendChild(listItem);
     listItem.textContent = `${hour[i]} ${Math.floor(Paris.hourCust[i] * Paris.avg)} cookies`;
-    sum = sum + Math.floor(Paris.hourCust[i] * Paris.avg);
-    if (i == (hour.length - 1)) {
-        Paris.total = sum;
-        listItem.textContent = `Total: ${sum}`;
-        unOrderedList.appendChild(listItem);
+    Paris.total = Paris.total + Math.floor(Paris.hourCust[i] * Paris.avg);
+    // if (i == (hour.length - 1)) {
+    //     Paris.total = sum;
+    //     listItem.textContent = `Total: ${sum}`;
+    //     unOrderedList4.appendChild(listItem);
 
-    }
+    // }
 
 
 }
+
+//////////
+let listItem4 = document.createElement('li');
+unOrderedList4.appendChild(listItem4);
+listItem4.textContent = `Total: ${Paris.total}`;
+//////////
 console.log(Lima.total)
 console.log(Seattle.total)
 console.log(Dubai.total)
 console.log(Paris.total)
 console.log(Tokyo.total)
+console.log(Seattle.hourCust);
