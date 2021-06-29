@@ -229,6 +229,7 @@ function Location(name, min, max, avg) {
     this.min = min;
     this.max = max;
     this.avg = avg;
+    this.cus = [];
     this.cookiesPerHour = [];
     this.total = 0;
     all.push(this);
@@ -239,9 +240,9 @@ Location.prototype.randomcus = function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
 };
 
-Location.prototype.cookiesHr = function () {
-    return Math.floor(this.avg * this.randomcus());
-}
+//Location.prototype.cookiesHr = function () {
+//  return Math.floor(this.avg * this.randomcus());
+//}
 
 Location.prototype.render = function () {
 
@@ -253,16 +254,16 @@ Location.prototype.render = function () {
     trElement.appendChild(thelement);
 
     for (let i = 0; i < workingHour.length; i++) {
-
-        this.cookiesHr();
-
+        this.cus.push(this.randomcus());
+        //this.cookiesHr();
+        this.cookiesPerHour.push(Math.floor(this.cus[i] * this.avg));
         let tdElement = document.createElement('td');
-        tdElement.textContent = this.cookiesHr();
+        tdElement.textContent = this.cookiesPerHour[i];
         trElement.appendChild(tdElement);
 
-        this.cookiesPerHour.push(this.cookiesHr());
 
-        this.total += this.cookiesHr();
+
+        this.total += this.cookiesPerHour[i];
     }
 
     let tdElement = document.createElement('td');
@@ -324,4 +325,5 @@ function totalOfTotal() {
     raw.appendChild(lastTd);
     lastTd.textContent = tOT;
 }
+
 totalOfTotal();
