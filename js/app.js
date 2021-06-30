@@ -293,15 +293,15 @@ function worH() {
 }
 //////
 worH();
-Seattle.render();
-Tokyo.render();
-Dubai.render();
-Paris.render();
-Lima.render();
+// Seattle.render();
+// Tokyo.render();
+// Dubai.render();
+// Paris.render();
+// Lima.render();
+let raw = document.createElement('tr');
 
 function totalOfTotal() {
 
-    let raw = document.createElement('tr');
     tableEl.appendChild(raw);
     let firstTd = document.createElement('td');
     raw.appendChild(firstTd);
@@ -325,5 +325,27 @@ function totalOfTotal() {
     raw.appendChild(lastTd);
     lastTd.textContent = tOT;
 }
+const newLocation = document.getElementById('addLocation');
+newLocation.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
 
+    event.preventDefault();
+    const newName = event.target.nameField.value;
+    console.log(newName);
+    const newMax = Number(event.target.maxField.value);
+    console.log(newMax);
+    const newMin = Number(event.target.minField.value);
+    console.log(newMin);
+    const newAvg = Number(event.target.avgField.value);
+    let newStor = new Location(newName, newMin, newMax, newAvg);
+    newStor.render();
+    console.log(newStor);
+
+    // all.push(newStor);
+    raw.innerHTML = '';
+    totalOfTotal();
+}
+for (let i = 0; i < all.length; i++) {
+    all[i].render();
+}
 totalOfTotal();
