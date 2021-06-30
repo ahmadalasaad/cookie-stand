@@ -332,11 +332,11 @@ function handleSubmit(event) {
     event.preventDefault();
     const newName = event.target.nameField.value;
     console.log(newName);
-    const newMax = Number(event.target.maxField.value);
+    const newMax = parseInt(event.target.maxField.value);
     console.log(newMax);
-    const newMin = Number(event.target.minField.value);
+    const newMin = parseInt(event.target.minField.value);
     console.log(newMin);
-    const newAvg = Number(event.target.avgField.value);
+    const newAvg = parseFloat(event.target.avgField.value);
     let newStor = new Location(newName, newMin, newMax, newAvg);
     newStor.render();
     console.log(newStor);
