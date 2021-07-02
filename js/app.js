@@ -260,9 +260,6 @@ Location.prototype.render = function () {
         let tdElement = document.createElement('td');
         tdElement.textContent = this.cookiesPerHour[i];
         trElement.appendChild(tdElement);
-
-
-
         this.total += this.cookiesPerHour[i];
     }
 
