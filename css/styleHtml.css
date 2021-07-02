@@ -1,72 +1,197 @@
 *{
     box-sizing: border-box;
 }
-body{
-   
-        padding: 10px;
-        background-color:#82829E;
-        width: 90%;
-        margin: 0 auto;
-}
-
-header{
-   position: relative;
-    background-color: cadetblue;
-    height: 100px;
-}
- header nav ul li {
-
-    display: inline-block;
-    padding-left:20px ;
-    
- }
- header nav{
-     position: absolute;
-
-     right: 2%;
-     top: 35%;
- }
-
- header nav ul li a{
-     font-size: larger;
-     text-decoration: none;
- }
- header h1{
-     display: inline-block;
-      padding-left:10px ;
-      padding-top: 10px;
- }
-
- header nav ul li:hover {
-
-    background-color: rgb(160, 95, 95);
- }
- main{
-
+body {
+    padding: 10px;
     width: 90%;
-    background-color: rgb(158, 157, 157);
     margin: 0 auto;
- }
- #time {
-     width: 50%;
-     float:left ;
-     padding-right: 1px;
- }
- #loc{
-     width: 49%;
-     float: right;
- }
- #images{
-     margin: 10px;
- }
-#images img{
-    width: 100%;
-    padding-top: 10px;
- }
- footer{
-     padding-top: 10px;
-     height: 40px;
-     font-size: larger;
-     text-align: center;
-     background-color:cadetblue ;
- }
+}
+header{
+margin: 0 auto;
+padding: 30px;
+position: relative;
+background-color: #004370;
+font-family: 'Zen Loop', cursive;
+}
+header div {
+    display: inline-block;
+}
+header div h1{
+    font-size: 80px;
+    font-weight: bolder;
+    color:antiquewhite;
+}
+
+header div img{
+    width: 40%;
+}
+header ul{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+header nav ul li {
+    font-family: 'Zen Loop', cursive;
+    display: inline-block;
+    font-size: 50px;
+    padding: 20px;
+   
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+main{
+    margin: 0 auto;
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#004370;
+    background-blend-mode: screen;
+    height: 820px;
+    position: relative;
+}
+main #about {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    left: 20px;
+    top: 20px;;
+}
+main #about h1{
+    font-size: 70px;
+    color:antiquewhite; 
+    font-family: 'Zen Loop', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px blue;
+}
+main #about p{
+    line-height : 1.4;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+    font-weight: bold;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px rgb(14, 12, 12);
+}
+main #why{
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;;
+}
+main #why h1{
+    font-size: 70px;
+    color:antiquewhite; 
+    font-family: 'Zen Loop', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px blue;
+
+}
+main #why p {
+    line-height : 1.4;
+    font-family: 'Roboto', sans-serif;
+    color: antiquewhite;
+    font-weight: bold;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px rgb(14, 13, 13);
+
+
+}
+main #loc {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    top: 20px;
+
+}
+main #loc h3{
+    font-size: 70px;
+    color:antiquewhite; 
+    font-family: 'Zen Loop', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px blue;
+}
+main #loc ul li {
+    font-family: 'Fuggles', cursive;    color: antiquewhite;
+    font-weight: bold;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px rgb(223, 5, 5);
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+main #hour{
+    position: absolute;
+    right:0;
+    width: 40%;
+    bottom: 70px;
+}
+main #hour h3{
+font-size: 70px;
+color:antiquewhite; 
+font-family: 'Zen Loop', cursive;
+font-weight: bolder;
+text-shadow: 2px 2px 4px blue;
+}
+main #hour ul li{
+    display: inline-block;
+    font-family: 'Fuggles', cursive;  
+    color: rgb(255, 254, 253);
+    font-weight: bold;
+    padding-right: 20px;
+    text-shadow: 2px 2px 4px rgb(15, 15, 14);
+    font-size: 50px;
+   
+
+}
+footer{
+    margin: 0 auto;
+    height: 80px;
+    background-color:#004370 ;
+    position: relative;
+}
+footer #copy{
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 25px;
+    
+}
+footer #copy p{
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+}
+footer #email {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top:25px;
+}
+footer #email p {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: 'Zen Loop', cursive;
+}
+footer #num {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top:25px;
+}
+footer #num p {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: 'Zen Loop', cursive;
+}
+
+header nav ul li:hover{
+    background-color: blueviolet;
+}
+main #loc ul li:hover{
+    font-size: 90px;
+}
+main #hour ul li:hover{
+    opacity: 50%;
+}
