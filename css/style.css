@@ -1,9 +1,107 @@
-table {
-    border: solid 1px black;
+*{
+    box-sizing: border-box;
 }
-tr {
-    border: solid 1px black;
+body {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    
+    
 }
-td {
-    border: solid 1px black;
+header{
+margin: 0 auto;
+padding: 30px;
+position: relative;
+background-color:black;
+font-family: 'Zen Loop', cursive;
 }
+header div {
+    display: inline-block;
+}
+header div h1{
+    font-size: 80px;
+    font-weight: bolder;
+    color:antiquewhite;
+}
+
+header div img{
+    width: 40%;
+}
+header ul{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+header nav ul li {
+    font-family: 'Zen Loop', cursive;
+    display: inline-block;
+    font-size: 50px;
+    padding: 20px;
+   
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+main{
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(250, 244, 244);
+    height: 800px;
+
+}
+#form{
+    position: absolute;
+    right: 47%;
+    padding-top: 50px;
+}
+/* #form input{
+    width: 200px;
+} */
+#form fieldset {
+    border: solid 5px white;
+    margin: auto;
+    /* width: 75%;*/
+    padding: 20px; 
+     align-content: center;
+    border-radius: 7px;
+    word-spacing: 2px;
+  }
+  
+  legend {
+    color: rgb(252, 253, 250);
+    text-shadow: 2px 2px 4px rgb(15, 15, 14);
+    font-family: 'Zen Loop', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 4px;
+  }
+  
+  #ctable{
+      padding-top: 100px;
+      position: absolute;
+      width: 80%;
+      height: 70%;
+      right: 10%;
+      bottom: 30px;
+  }
+  table{
+    width: 100%;
+    border: rgb(65, 3, 3) 5px;
+    border-style: solid;
+   
+}
+th, td {
+    border: 2px solid rgb(65, 3, 3);
+    text-align: center;
+  } 
+  table tr{
+      height:50px;
+      border: 2px solid rgb(247, 243, 243);
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+  } 
+  

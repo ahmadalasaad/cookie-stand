@@ -221,7 +221,7 @@ let headerthElement = document.createElement('tr');
 tableEl.appendChild(headerthElement);
 let headertdHourElement = document.createElement('td');
 headerthElement.appendChild(headertdHourElement);
-headertdHourElement.textContent = '';
+headertdHourElement.textContent = 'Location';
 
 let all = [];
 function Location(name, min, max, avg) {
