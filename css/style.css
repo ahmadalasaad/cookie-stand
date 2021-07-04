@@ -12,7 +12,7 @@ header{
 margin: 0 auto;
 padding: 30px;
 position: relative;
-background-color:black;
+background-color:rgba(165, 42, 42, 0.87);
 font-family: 'Zen Loop', cursive;
 }
 header div {
@@ -47,12 +47,16 @@ header nav ul li a{
 main{
     margin: 0 auto;
     position: relative;
-    background-color: rgb(250, 244, 244);
+    background-image: url("../img/photo-1463797221720-6b07e6426c24.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color:#004370; */
+    background-blend-mode: screen;
     height: 800px;
 }
 #form{
     position: absolute;
-    right: 47%;
+    right: 42%;
     padding-top: 50px;
 }
 /* #form input{
@@ -89,13 +93,15 @@ main{
       width: 80%;
        /* height: 70%; */
       right: 10%;
-      top: 350px;
+      top: 400px;
   }
   table{
     width: 100%;
     border: rgb(65, 3, 3) 5px;
     border-style: solid;
-   p
+    /* border-radius: 25px; */
+    /* box-shadow: 0 0 0 1px #666; */
+   
 }
 th, td {
     border: 2px solid rgb(65, 3, 3);
@@ -107,5 +113,20 @@ th, td {
     text-align: center;
     background-color: black;
     color: blanchedalmond;
+    /* border-radius: 25px; */
   } 
+  table tr:hover {
+      color: black;
+      background-color: cornsilk;
+  }
+  td:hover{
+      color: rgb(241, 241, 241);
+      background-color: rgb(206, 13, 212);
+  }
+  header nav ul li:hover{
+      background-color: antiquewhite;
+  }
+  header nav ul li a:hover {
+      color: rgba(165, 42, 42, 0.87);;
+  }
   
