@@ -49,7 +49,6 @@ main{
     position: relative;
     background-color: rgb(250, 244, 244);
     height: 800px;
-
 }
 #form{
     position: absolute;
@@ -62,7 +61,7 @@ main{
 #form fieldset {
     border: solid 5px white;
     margin: auto;
-    /* width: 75%;*/
+     width: 75%; 
     padding: 20px; 
      align-content: center;
     border-radius: 7px;
@@ -78,20 +77,25 @@ main{
     text-align: center;
     padding: 4px;
   }
+  button{
+      margin-top: 20px;
+      margin-left: 40px;
+  }
   
   #ctable{
-      padding-top: 100px;
+      /* display: inline-block; */
+      /* padding-top:200px; */
       position: absolute;
       width: 80%;
-      height: 70%;
+       /* height: 70%; */
       right: 10%;
-      bottom: 30px;
+      top: 350px;
   }
   table{
     width: 100%;
     border: rgb(65, 3, 3) 5px;
     border-style: solid;
-   
+   p
 }
 th, td {
     border: 2px solid rgb(65, 3, 3);

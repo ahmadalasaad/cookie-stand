@@ -266,7 +266,7 @@ Location.prototype.render = function () {
     let tdElement = document.createElement('td');
     tdElement.textContent = this.total;
     trElement.appendChild(tdElement);
-    tableEl.appendChild(trElement);
+    // tableEl.appendChild(trElement);
 };
 
 
