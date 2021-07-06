@@ -327,6 +327,7 @@ newLocation.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
 
     event.preventDefault();
+    console.log(event);
     const newName = event.target.nameField.value;
     console.log(newName);
     const newMax = parseInt(event.target.maxField.value);
